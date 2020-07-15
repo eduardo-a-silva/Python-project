@@ -16,7 +16,7 @@ def variancia(vetor):
     med=np.mean(vetor)
     comp=len(vetor)
     for num in vetor:
-        var = (var + ((num-med)**2)/comp)
+        var = (var + ((num-med)**2)/comp)# (comp) ou (comp-1), deve escolher sobre dividir pelo número de observações ou ele menos 1
     return var
 
 
