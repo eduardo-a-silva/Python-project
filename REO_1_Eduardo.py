@@ -1,11 +1,3 @@
-########################################################################################################################
-# DATA: 17/07/2020
-# DISCIPLINA: VISÃO COMPUTACIONAL NO MELHORAMENTO DE PLANTAS
-# PROFESSOR: VINÍCIUS QUINTÃO CARNEIRO
-# ALUNO: EDUARDO ALVES DA SILVA
-# E-MAIL: eduardo.silva4@estudante.ufla.br
-# GITHUB: eduardo-a-silva
-########################################################################################################################
 print("---------------------------------------------------------------------------------------------------------------")
 print("Exercicio N°1")
 print("Declare os valores 43.5,150.30,17,28,35,79,20,99.07,15 como um array numpy.")
