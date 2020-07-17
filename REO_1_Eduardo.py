@@ -66,14 +66,10 @@ print("-------------------------------------------------------------------------
 print("")
 print("Letra H)")
 print("Crie uma estrutura de repetição usando o for para fazer a soma dos quadrados de cada valor do vetor.")
-it=0
 SQ=0
 for i in range(0,len(vetor),1):
-    it = it + 1
     SQ=SQ+ vetor[int(i)] ** 2
-    print('Iteração: ' + str(it))
-    print('Na posição ' + str(i) + ' há o valor: ' + str(vetor[int(i)]))
-    time.sleep(0.5)
+    #time.sleep(0.5)
 
 print("     ")
 print("A soma de quadrado dos valores é: ", SQ)
@@ -215,20 +211,21 @@ print("Apresente a seguinte mensagem a cada iteração {Na linha X e na coluna Y
 print("Nesta estrutura crie uma lista que armazene os genótipos com peso de 100 grãos igual ou superior a 25")
 import time
 contador=0
-matriz_quadrados = np.zeros((nl,nc))
+maior=[]
 for i in np.arange(0,nl,1):
     for j in np.arange(0,nc,1):
         contador += 1
         print('Iteração: '+ str(contador))
         print('Na linha ' + str(i) + ' e coluna ' + str(j) + ' há o elemento: ' + str(matriz_01[int(i),int(j)]))
-        time.sleep(0.5)
-        matriz_quadrados[int(i),int(j)] = (matriz_01[int(i),int(j)])**2
+        #time.sleep(0.5)
+        if j==2 and matriz_01[int(i), int(j)]>=25:
+            maior.append(matriz_01[int(i),0])
         print("")
         print('-----------------------------------------------------------------------------------------------------------------')
         print("")
 np.set_printoptions(precision=2)
 np.set_printoptions(suppress=True)
-print(matriz_01)
+print(maior)
 print("----------")
 print(matriz_quadrados)
 print("")
