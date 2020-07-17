@@ -45,7 +45,7 @@ print("Letra F)")
 print("Apresente um vetor que contenha os valores da primeira, quinta e última posição.")
 vetor_1=(vetor[0])
 vetor_5=vetor[4]
-vetor_last=vetor[8]
+vetor_last=vetor[-1]
 new_vetor=vetor_1, vetor_5, vetor_last
 print("O novo vetor com os valore da posição 1°, 5° e 9°=", new_vetor)
 print("")
@@ -67,16 +67,16 @@ print("")
 print("Letra H)")
 print("Crie uma estrutura de repetição usando o for para fazer a soma dos quadrados de cada valor do vetor.")
 it=0
-somador=0
+SQ=0
 for i in range(0,len(vetor),1):
     it = it + 1
-    somador=somador+ vetor[int(i)] ** 2
+    SQ=SQ+ vetor[int(i)] ** 2
     print('Iteração: ' + str(it))
     print('Na posição ' + str(i) + ' há o valor: ' + str(vetor[int(i)]))
     time.sleep(0.5)
 
 print("     ")
-print("A soma de quadrado dos valores é: ", somador)
+print("A soma de quadrado dos valores é: ", SQ)
 
 print("")
 print("------------------------------------------------------------------------------")
@@ -153,15 +153,15 @@ print("-------------------------------------------------------------------------
 print("")
 print("Letra D)")
 print("Obtenha as médias das linhas considerando somente as colunas 2 e 3")
-print("Linha   Média")
-l1_2=np.mean(matriz_01[0,1:3])
+l1=np.mean(matriz_01[0,1:3])
 l2=np.mean(matriz_01[1,1:3])
 l3=np.mean(matriz_01[2,1:3])
 l4=np.mean(matriz_01[3,1:3])
 l5=np.mean(matriz_01[4,1:3])
 l6=np.mean(matriz_01[5,1:3])
 l7=np.mean(matriz_01[6,1:3])
-print("  1     ", l1_2)
+print("Linha   Média")
+print("  1     ", l1)
 print("  2     ", l2)
 print("  3     ", l3)
 print("  4     ", l4)
@@ -174,7 +174,7 @@ print("")
 print("Letra E)")
 print("Considerando que a primeira coluna seja a identificação de genótipos, a segunda nota de severidade de uma doença e"
       "e a terceira peso de 100 grãos. Obtenha os genótipos que possuem nota de severidade inferior a 5.")
-menor_sev=matriz_01[0:,1]<5
+menor_sev=matriz_01[:,1]<5
 position = np.where(menor_sev)
 matriz_sev_bool=matriz_01[position]
 
@@ -292,7 +292,7 @@ dados_100000 = np.random.normal(loc=100, scale=50, size=100000)
 #plt.hist
 import matplotlib.pyplot as plt
 from matplotlib import colors
-from matplotlib.ticker import PercentFormatter
+#from matplotlib.ticker import PercentFormatter
 
 #histogra_exemplo = plt.hist(dados_1000, bins=15)#para plotar com uma unica cor(azul)
 #plt.hist(dados_10, bins=15)
@@ -423,7 +423,7 @@ print('Genótipos     Max     Min      Média    Variância')
 matriz_concat = np.concatenate((genotipo, mat),axis=1)
 print (matriz_concat)
 
-import os
+#import os
 #help (np.savetxt)
 np.savetxt("Matriz de dados.txt", matriz_concat, fmt='%2.2f', delimiter='\t')
 #np.savetxt('matriz_ex3.txt', matriz_concat, delimiter=' ')
@@ -441,7 +441,7 @@ print("___________________________________________________")
 print("")
 print("")
 matriz_med_maior=matriz_concat[matriz_concat[:,3]>=500]
-print("Os genotipos que possuem média maior que 500 são: ",matriz_med_maior[:,0])
+print("Os genotipos que possuem média maior ou igual que 500 são: ",matriz_med_maior[:,0])
 
 print("")
 print("------------------------------------------------------------------------------")
