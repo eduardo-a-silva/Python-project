@@ -1,0 +1,83 @@
+########################################################################################################################
+# DATA: 02/07/2020
+# DISCIPLINA: VISÃO COMPUTACIONAL NO MELHORAMENTO DE PLANTAS
+# PROFESSOR: VINÍCIUS QUINTÃO CARNEIRO
+# E-MAIL: vinicius.carneiro@ufla.br
+# GITHUB: vqcarneiro
+########################################################################################################################
+
+# REO 01 - LISTA DE EXERCÍCIOS
+
+# EXERCÍCIO 01:
+# a) Declare os valores 43.5,150.30,17,28,35,79,20,99.07,15 como um array numpy.
+# b) Obtenha as informações de dimensão, média, máximo, mínimo e variância deste vetor.
+# c) Obtenha um novo vetor em que cada elemento é dado pelo quadrado da diferença entre cada elemento do vetor declarado
+# na letra a e o valor da média deste.
+# d) Obtenha um novo vetor que contenha todos os valores superiores a 30.
+# e) Identifique quais as posições do vetor original possuem valores superiores a 30
+# f) Apresente um vetor que contenha os valores da primeira, quinta e última posição.
+# g) Crie uma estrutura de repetição usando o for para apresentar cada valor e a sua respectiva posição durante as iterações
+# h) Crie uma estrutura de repetição usando o for para fazer a soma dos quadrados de cada valor do vetor.
+# i) Crie uma estrutura de repetição usando o while para apresentar todos os valores do vetor
+# j) Crie um sequência de valores com mesmo tamanho do vetor original e que inicie em 1 e o passo seja também 1.
+# h) Concatene o vetor da letra a com o vetor da letra j.
+
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+
+# Exercício 02
+#a) Declare a matriz abaixo com a biblioteca numpy.
+# 1 3 22
+# 2 8 18
+# 3 4 22
+# 4 1 23
+# 5 2 52
+# 6 2 18
+# 7 2 25
+
+# b) Obtenha o número de linhas e de colunas desta matriz
+# c) Obtenha as médias das colunas 2 e 3.
+# d) Obtenha as médias das linhas considerando somente as colunas 2 e 3
+# e) Considerando que a primeira coluna seja a identificação de genótipos, a segunda nota de severidade de uma doença e
+# e a terceira peso de 100 grãos. Obtenha os genótipos que possuem nota de severidade inferior a 5.
+# f) Considerando que a primeira coluna seja a identificação de genótipos, a segunda nota de severidade de uma doença e
+# e a terceira peso de 100 grãos. Obtenha os genótipos que possuem nota de peso de 100 grãos superior ou igual a 22.
+# g) Considerando que a primeira coluna seja a identificação de genótipos, a segunda nota de severidade de uma doença e
+# e a terceira peso de 100 grãos. Obtenha os genótipos que possuem nota de severidade igual ou inferior a 3 e peso de 100
+# grãos igual ou superior a 22.
+# h) Crie uma estrutura de repetição com uso do for (loop) para apresentar na tela cada uma das posições da matriz e o seu
+#  respectivo valor. Utilize um iterador para mostrar ao usuário quantas vezes está sendo repetido.
+#  Apresente a seguinte mensagem a cada iteração "Na linha X e na coluna Y ocorre o valor: Z".
+#  Nesta estrutura crie uma lista que armazene os genótipos com peso de 100 grãos igual ou superior a 25
+
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+
+# EXERCÍCIO 03:
+# a) Crie uma função em um arquivo externo (outro arquivo .py) para calcular a média e a variância amostral um vetor qualquer, baseada em um loop (for).
+# b) Simule três arrays com a biblioteca numpy de 10, 100, e 1000 valores e com distribuição normal com média 100 e variância 2500. Pesquise na documentação do numpy por funções de simulação.
+# c) Utilize a função criada na letra a para obter as médias e variâncias dos vetores simulados na letra b.
+# d) Crie histogramas com a biblioteca matplotlib dos vetores simulados com valores de 10, 100, 1000 e 100000.
+
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+
+# EXERCÍCIO 04:
+# a) O arquivo dados.txt contem a avaliação de genótipos (primeira coluna) em repetições (segunda coluna) quanto a quatro
+# variáveis (terceira coluna em diante). Portanto, carregue o arquivo dados.txt com a biblioteca numpy, apresente os dados e obtenha as informações
+# de dimensão desta matriz.
+# b) Pesquise sobre as funções np.unique e np.where da biblioteca numpy
+# c) Obtenha de forma automática os genótipos e quantas repetições foram avaliadas
+# d) Apresente uma matriz contendo somente as colunas 1, 2 e 4
+# e) Obtenha uma matriz que contenha o máximo, o mínimo, a média e a variância de cada genótipo para a variavel da coluna 4. Salve esta matriz em bloco de notas.
+# f) Obtenha os genótipos que possuem média (médias das repetições) igual ou superior a 500 da matriz gerada na letra anterior.
+# g) Apresente os seguintes graficos:
+#    - Médias dos genótipos para cada variável. Utilizar o comando plt.subplot para mostrar mais de um grafico por figura
+#    - Disperão 2D da médias dos genótipos (Utilizar as três primeiras variáveis). No eixo X uma variável e no eixo Y outra.
+
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
