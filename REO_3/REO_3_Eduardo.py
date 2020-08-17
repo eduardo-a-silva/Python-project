@@ -1,5 +1,5 @@
 ########################################################################################################################
-# DATA: 17/07/2020
+# DATA: 17/08/2020
 # DISCIPLINA: VISÃO COMPUTACIONAL NO MELHORAMENTO DE PLANTAS
 # ALUNO: EDUARDO ALVES DA SILVA
 # GITHUB: eduardo-a-silva
